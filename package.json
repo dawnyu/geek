@@ -1,0 +1,36 @@
+{
+  "name": "geekbuluo",
+  "version": "1.0.0",
+  "description": "大鹏一日同风起",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "refresh": "node loadMD.mjs",
+    "build": "npm run docs:build",
+    "deploy": "# bash ./deploy.sh",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview"
+  },
+  "author": "dawnyu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.0",
+    "blueimp-md5": "^2.19.0",
+    "js-yaml": "^4.1.0",
+    "medium-zoom": "^1.0.8",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "sass": "^1.60.0",
+    "unocss": "^0.56.4",
+    "vitepress": "^1.0.0-rc.20"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "leancloud-storage": "^4.15.1",
+    "terser": "^5.16.8",
+    "vue": "^3.3.4"
+  },
+  "main": "uno.config.js",
+  "directories": {
+    "doc": "docs"
+  }
+}
