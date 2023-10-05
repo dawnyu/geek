@@ -4,7 +4,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import nav from './config/nav.js';
 import sidebar from './config/sidebar.js'
 import markdown from './config/markdown.js'
-import { github, createSocialLinks, createAlgolia } from './config/setting.js';
+import { github, createAlgolia } from './config/setting.js';
 
 export default defineConfig({
   base: '/',
