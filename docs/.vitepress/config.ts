@@ -7,7 +7,7 @@ import markdown from './config/markdown.js'
 import { createAlgolia } from './config/setting.js';
 
 export default defineConfig({
-  base: '/',
+  base: '/geekbuluo/',
   outDir: './.vitepress/dist',
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
