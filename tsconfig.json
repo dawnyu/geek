@@ -16,5 +16,5 @@
       "@theme/*": [".vitepress/theme/*"]
     }
   },
-  "include": ["env.d.ts", "docs/**/*", "docs/.vitepress/**/*", "docs/.vitepress/*.json", "typing.d.ts"]
+  "include": ["env.d.ts", "docs/.vitepress/**/*", "docs/.vitepress/*.json", "typing.d.ts"]
 }

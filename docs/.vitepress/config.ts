@@ -23,6 +23,7 @@ export default defineConfig({
   lastUpdated: true,
   useWebFonts: false,
   cleanUrls: true,
+  title: '极客部落-专注于前端技术领域添砖加瓦',
   description: '专注于分享最有价值的互联网技术干货',
   lang: 'zh-CN',
   markdown,
@@ -33,7 +34,7 @@ export default defineConfig({
     lastUpdatedText: '最后更新', // 最后更新时间文本配置, 需先配置lastUpdated为true
     docFooter: { prev: '上一篇', next: '下一篇' },
     // editLink: {
-    //   pattern: `${github}/blob/main/docs/:path`,
+    //   pattern: `${github}/blob/main/doc全部文档/:path`,
     //   text: '在 GitHub 上编辑此页面'
     // },
     footer: {
@@ -68,16 +69,23 @@ export default defineConfig({
   },
   rewrites: {
     // 推荐书籍模块路径重写
-    // 's/recommended-books/:a/:b.md': ':a/:b.md',
-    // 's/recommended-books/:a/:b/:c.md': ':a/:c.md',
+    // '全部文档/recommended-book全部文档/:a/:b.md': ':a/:b.md',
+    // '全部文档/recommended-book全部文档/:a/:b/:c.md': ':a/:c.md',
 
-    // 其他模块路径重写
-    's/书籍推荐/:b.md': ':b.md',
-    's/书籍推荐/:b/:c.md': ':c.md',
-    's/书籍推荐/:b/:c/:d.md': ':d.md',
+
 
     /** 面试题路径重写 */
-    's/前端面试题/:a/:b.md': 'interview-question/:b.md',
-    's/前端面试题/:a/:b/:c.md': 'interview-question/:c.md',
+    '全部文档/前端面试题/:a/:b.md': `interview-question/:b.md`,
+    '全部文档/前端面试题/:a/:b/:c.md': `interview-question/:c.md`,
+
+    /** 书籍推荐 */
+    '全部文档/书籍推荐/:b.md': 'article/:b.md',
+    '全部文档/书籍推荐/:b/:c.md': 'article/:c.md',
+    '全部文档/书籍推荐/:b/:c/:d.md': 'article/:d.md',
+
+    /** 技术专栏路径重写 */
+    '全部文档/技术专栏/:a.md': `article/:a.md`,
+    '全部文档/技术专栏/:a/:b.md': `article/:b.md`,
+    '全部文档/技术专栏/:a/:b/:c.md': `article/:c.md`,
   }
 });

@@ -86,8 +86,6 @@ span {
   font-weight: normal;
 }
 
-@media (min-width: 1440px) {
-  .VPDoc:not(.has-sidebar) .container {
-    max-width: 1250px;
-  }
+h1 {
+  text-align: center !important;
 }
