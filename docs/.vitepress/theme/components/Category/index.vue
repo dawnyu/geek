@@ -15,12 +15,16 @@ import Posts from '../Widget/Posts.vue';
 import Aside from '../Aside/index.vue';
 
 let renderData = [];
-if (typeof window !== 'undefined') {
-  const category = window.location.search.slice(3);
-  renderData = posts.filter(
-    (v) => v.category === decodeURIComponent(category)
-  );
+const props = defineProps({
+  keyword: String
+});
+let keyword = '';
+if (props.keyword) {
+  keyword = props.keyword;
+} else if (typeof window !== 'undefined') {
+  keyword = decodeURIComponent(window.location.search.slice(3));
 }
+renderData = posts.filter((v) => v.category === keyword);
 </script>
 
 <style lang="scss" scoped>

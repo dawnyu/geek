@@ -7,7 +7,7 @@ export default createContentLoader('全部文档/**/*.md', {
     // the final result is what will be shipped to the client.
     return rawData.map(({ url, frontmatter, excerpt }) => ({
       title: frontmatter.title,
-      link: `article/${url.split('/').pop()}`,
+      link: `/article/${url.split('/').pop()}`,
       category: frontmatter.category,
       excerpt,
       preview: frontmatter.preview,
