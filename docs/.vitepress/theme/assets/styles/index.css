@@ -5,12 +5,23 @@
   .VPDoc:not(.has-sidebar) .container {
     max-width: 1380px !important;
   }
-}
 
-@media (min-width: 1440px) {
   .VPDoc:not(.has-sidebar) .content {
     max-width: 984px !important;
   }
+
+  .vp-doc img {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .vp-doc img {
+    max-width: 375px;
+  }
+}
+.vp-doc .line {
+  text-wrap: wrap !important;
 }
 
 .VPDoc:not(.has-sidebar) .aside {

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 const props = defineProps<{
   data: {
     date: string;
@@ -10,12 +12,20 @@ const props = defineProps<{
     intro: string;
   }[];
 }>();
+
+const posts = ref(props.data.slice(0, 10));
+let pageIndex = 1;
+
+const loadMoreData = () => {
+  posts.value = props.data.slice(0, pageIndex * 10);
+  pageIndex++;
+};
 </script>
 
 <template>
   <div class="bg-white px-3">
     <article
-      v-for="art in props.data"
+      v-for="art in posts"
       :key="art.link"
       class="group flex mx-4 py-5 border-b-solid border-slate-100"
     >
@@ -37,7 +47,7 @@ const props = defineProps<{
             </h2>
           </a>
         </header>
-        <p class="font-size-3 c-dark-50 my-2">
+        <p class="text-3 c-dark-50 my-2">
           <span class="mr-1.5"
             ><i class="iconfont icon-renxiang text-3 mr-0.5"></i>
             {{ art.userName }}</span
@@ -47,11 +57,14 @@ const props = defineProps<{
             >{{ art.date }}</span
           >
         </p>
-        <p class="font-size-4 line-clamp-3 c-gray-700">
+        <p class="text-4 line-clamp-3 c-gray-700">
           {{ art.intro }}
         </p>
       </section>
     </article>
+    <div class="text-5 align-center mt-2" @click="loadMoreData">
+      查看更多
+    </div>
   </div>
 </template>
 
