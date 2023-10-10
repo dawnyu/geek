@@ -163,9 +163,7 @@ vm.unfreeze('obj');
 **isolated-vm：**
 这个npm库也是vm2作者开发的，作者认为vm2现在越来越难维护，已经到了不得不终止项目的地步 🤣🤣
 
-> ![](https://cdn.nlark.com/yuque/0/2023/jpeg/459613/1694576156716-7e2c9f1c-b2cf-4eeb-9a99-067d559b62f7.jpeg#averageHue=%23382923&clientId=u6594667b-4e02-4&from=paste&height=40&id=u8474f9a0&originHeight=460&originWidth=460&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uf33c09ad-bca0-40b1-8cc5-2319a0a655e&title=&width=40)：Unfortunately, the growing complexity of Node has brought us to a crossroads. We now find ourselves facing an escape so complicated that fixing it seems impossible. And this isn't about one isolated issue. Recent reports have highlighted that sustaining this project in its current form is not viable in the long term.
-
-[传送门]()
+> ![](https://cdn.geekbuluo.com/blog/20231010/f17f9a.png)：Unfortunately, the growing complexity of Node has brought us to a crossroads. We now find ourselves facing an escape so complicated that fixing it seems impossible. And this isn't about one isolated issue. Recent reports have highlighted that sustaining this project in its current form is not viable in the long term.
 
 - 优点：
   - 提供更高级的隔离和安全性，可以在不同的 V8 上下文中运行代码。
@@ -429,5 +427,3 @@ const vm = new NodeVM({
 # 总结
 
 使用云函数模式开发有比较多的好处，每个云函数有独立的沙箱环境，与主程序隔离，灵活性大大提高，可拓展性也比较高，比如动态地添加、更新和删除云函数，而无需重新启动主应用程序。
-
-# Q&A

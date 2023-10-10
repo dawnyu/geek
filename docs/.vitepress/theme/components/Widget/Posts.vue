@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { inBrowser } from 'vitepress';
 
 const props = defineProps<{
   data: {
@@ -13,11 +14,13 @@ const props = defineProps<{
   }[];
 }>();
 
-const posts = ref(props.data.slice(0, 10));
+let posts = ref([]);
 let pageIndex = 1;
-
+if (inBrowser) {
+  posts.value = props.data?.slice(0, 10);
+}
 const loadMoreData = () => {
-  posts.value = props.data.slice(0, pageIndex * 10);
+  posts.value = props.data?.slice(0, pageIndex * 10);
   pageIndex++;
 };
 </script>
@@ -62,7 +65,10 @@ const loadMoreData = () => {
         </p>
       </section>
     </article>
-    <div class="text-5 align-center mt-2" @click="loadMoreData">
+    <div
+      class="text-5 align-center mt-2 pointer-events-none"
+      @click="loadMoreData"
+    >
       查看更多
     </div>
   </div>
