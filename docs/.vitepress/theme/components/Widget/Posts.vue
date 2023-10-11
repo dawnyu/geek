@@ -15,14 +15,19 @@ const props = defineProps<{
 }>();
 
 let posts = ref([]);
+let loadCompleted = ref(false);
 let pageIndex = 1;
-if (inBrowser) {
-  posts.value = props.data?.slice(0, 10);
-}
+let pageSize = 10;
+
 const loadMoreData = () => {
-  posts.value = props.data?.slice(0, pageIndex * 10);
+  posts.value = props.data.slice(0, pageIndex * pageSize);
+  console.log(1234, posts.value);
   pageIndex++;
+  loadCompleted.value = posts.value.length === props.data.length;
 };
+if (inBrowser) {
+  loadMoreData();
+}
 </script>
 
 <template>
@@ -66,11 +71,13 @@ const loadMoreData = () => {
       </section>
     </article>
     <div
-      class="text-5 align-center mt-2 pointer-events-none"
+      class="text-4 text-center mt-4 cursor-pointer"
+      v-if="!loadCompleted"
       @click="loadMoreData"
     >
-      查看更多
+      加载更多
     </div>
+    <div v-else class="text-3.5 text-center mt-4">没有更多了</div>
   </div>
 </template>
 
