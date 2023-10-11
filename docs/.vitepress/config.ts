@@ -23,7 +23,7 @@ export default defineConfig({
   lastUpdated: true,
   useWebFonts: false,
   cleanUrls: true,
-  title: '极客部落-专注于前端技术领域添砖加瓦',
+  title: '极客部落',
   description: '专注于分享最有价值的互联网技术干货',
   lang: 'zh-CN',
   markdown,
