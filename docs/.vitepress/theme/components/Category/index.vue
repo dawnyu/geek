@@ -1,7 +1,7 @@
 <template>
   <div class="container max-w-full">
     <main class="main bg px-15 py-4 m-auto">
-      <article class="flex-1 pt-5 px-5 pb-8 bg-white rounded-2">
+      <article class="flex-1 pt-5 px-5 pb-4 bg-white rounded-2">
         <Posts :data="renderData" />
       </article>
       <Aside />

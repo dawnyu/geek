@@ -1,10 +1,10 @@
 <template>
   <div class="container max-w-full">
     <main class="main bg px-15 py-4 m-auto">
-      <div>
-        <HomeHead />
+      <article class="flex-1 pt-5 px-5 pb-4 bg-white rounded-2">
+        <!-- <HomeHead /> -->
         <Posts :data="renderData" />
-      </div>
+      </article>
       <Aside />
     </main>
   </div>
@@ -29,8 +29,7 @@ if (typeof window !== 'undefined') {
 .main {
   display: flex;
   min-height: 100vh;
-  font-size: 16px;
-  max-width: 100%;
+  max-width: 1440px;
   background-color: #f7f7f7;
   color: #464646;
 }
