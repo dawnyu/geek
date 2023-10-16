@@ -22,11 +22,14 @@ export default defineConfig({
   ],
   lastUpdated: true,
   useWebFonts: false,
-  cleanUrls: true,
+  cleanUrls: false,
   title: '极客部落',
   description: '专注于分享最有价值的互联网技术干货',
   lang: 'zh-CN',
   markdown,
+  sitemap: {
+    hostname: 'https://geekbuluo.com'
+  },
   themeConfig: {
     siteTitle: '极客部落',
     outline: 'deep',
