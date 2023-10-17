@@ -19,6 +19,15 @@ export default defineConfig({
         content: 'width=device-width, initial-scale=1.0'
       }
     ],
+    ['script', {},
+      `var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?97bef4a5f23e8d6596d413bbf5c4cc4e";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })()`
+    ],
   ],
   lastUpdated: true,
   useWebFonts: false,
