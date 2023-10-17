@@ -46,7 +46,7 @@ if (inBrowser) {
       </a>
       <section class="flex ml-5 flex flex-col">
         <header>
-          <a class="c-dark-700 flex" :href="art.link">
+          <a class="c-dark-700 flex" :href="art.link" target="_blank">
             <span class="tag fw-600">{{ art.tags[0] }}</span>
             <h2>
               <span class="fw-600 group-hover:c-sky-500">{{
