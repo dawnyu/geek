@@ -1,6 +1,6 @@
 ---
 layout: Article
-title: "npm run xx" 命令背后的执行机制
+title: npm run xx命令背后的执行机制
 date: 2023/10/18
 tags: npm
 category: 技术专栏
@@ -8,7 +8,7 @@ preview: /common/77.jpg
 intro: "npm run" 命令是前端开发的关键工具，用于执行各种脚本任务，例如启动开发服务器、运行测试套件或自定义构建过程。尽管开发人员每天使用它，但背后的工作原理很多人可能不太关注。本文将深入研究 "npm run" 命令的内部工作机制，了解npm run xxx背后的细节。
 ---
 
-# "npm run xx" 命令背后的执行机制
+# npm run xx命令背后的执行机制
 
 ## 引言
 
