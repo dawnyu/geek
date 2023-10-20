@@ -1,6 +1,13 @@
 ---
 layout: Article
 title: 彻底搞懂jsonp
+head:
+  - - meta
+    - name: description
+      content: jsonp原理是什么
+  - - meta
+    - name: keywords
+      content: jsonp原理,jsonp做什么的,怎么实现jsonp
 date: 2023/10/10
 tags: CSS
 category: 技术专栏

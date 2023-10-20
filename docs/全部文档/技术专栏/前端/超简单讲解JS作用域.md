@@ -1,6 +1,13 @@
 ---
 layout: Article
 title: 超简单讲解JS作用域
+head:
+  - - meta
+    - name: description
+      content: JavaScript作用域是什么
+  - - meta
+    - name: keywords
+      content: JavaScript作用域,JS作用域,怎么学习作用域
 date: 2023/10/10
 tags: JavaScript
 category: 技术专栏

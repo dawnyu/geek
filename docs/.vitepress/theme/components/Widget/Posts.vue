@@ -39,6 +39,7 @@ if (inBrowser) {
     >
       <a class="flex-shrink-0 overflow-hidden" :href="art.link">
         <img
+          v-if="art.preview"
           class="w-57 h-36 group-hover:transform-scale-120 transition-1000 rounded pointer-events-none"
           :src="art.preview"
           alt=""

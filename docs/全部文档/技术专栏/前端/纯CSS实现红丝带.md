@@ -1,6 +1,13 @@
 ---
 layout: Article
 title: 纯CSS实现红丝带
+head:
+  - - meta
+    - name: description
+      content: CSS实现红丝带动效
+  - - meta
+    - name: keywords
+      content: CSS实现动效,CSS酷炫效果,CSS红丝带效果
 date: 2023/10/10
 tags: CSS
 category: 技术专栏

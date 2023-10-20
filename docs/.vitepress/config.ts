@@ -54,7 +54,7 @@ export default defineConfig({
       copyright: `CopyRight © 2020-2023 <a target="_blank" href="//geekbuluo.com">极客部落</a> All Rights Reserved`
     },
     // socialLinks: createSocialLinks(),
-    algolia: createAlgolia(),
+    // algolia: createAlgolia(),
 
     nav,
     sidebar,
