@@ -11,7 +11,7 @@ head:
 date: 2023/10/20
 tags: JavaScript
 category: 技术专栏
-intro: `requestAnimationFrame`是浏览器用于定时循环操作的一个API,通常用于动画和游戏开发。它会把每一帧中的所有DOM操作集中起来,在重绘之前一次性更新,并且关联到浏览器的重绘操作。
+intro: requestAnimationFrame是浏览器用于定时循环操作的一个API,通常用于动画和游戏开发。它会把每一帧中的所有DOM操作集中起来,在重绘之前一次性更新,并且关联到浏览器的重绘操作。
 ---
 
 # 浅析requestAnimationFrame的用法与优化
