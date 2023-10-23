@@ -90,10 +90,10 @@ export default defineConfig({
     '全部文档/前端面试题/:a/:b.md': `interview-question/:b.md`,
     '全部文档/前端面试题/:a/:b/:c.md': `interview-question/:c.md`,
 
-    /** 书籍推荐 */
-    '全部文档/书籍推荐/:b.md': 'article/:b.md',
-    '全部文档/书籍推荐/:b/:c.md': 'article/:c.md',
-    '全部文档/书籍推荐/:b/:c/:d.md': 'article/:d.md',
+    /** 编程资源 */
+    '全部文档/编程资源/:b.md': 'article/:b.md',
+    '全部文档/编程资源/:b/:c.md': 'article/:c.md',
+    '全部文档/编程资源/:b/:c/:d.md': 'article/:d.md',
 
     /** 技术专栏路径重写 */
     '全部文档/技术专栏/:a.md': `article/:a.md`,
