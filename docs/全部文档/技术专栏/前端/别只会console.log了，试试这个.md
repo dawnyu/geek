@@ -1,7 +1,6 @@
 ---
-​---
 layout: Article
-title: 不要只会console.log()，试试这个
+title: 别只会console.log了，试试这个
 head:
   - - meta
     - name: description
@@ -13,14 +12,12 @@ date: 2023/10/25
 tags: JavaScript
 category: 技术专栏
 intro: 无论你是前端刚入门还是经验丰富的老鸟，debug调试都是日常编程中必备的技能。你可能在代码中已经习惯使用console.log()和debugger，但是我要说，前端真的只有这俩货，我还有一些其他的调试技巧，这些技巧可以使我们的调试过程更加高效和有趣。
-
-​---
 ---
 
 
-# 不要只会console.log()，试试这个
+# 不要只会用console.log了，试试这个
 
-无论你是前端刚入门还是经验丰富的老鸟，debug调试都是日常编程中必备的技能。你可能在代码中已经习惯使用`console.log()`和`debugger`，但是我要说，前端真的只有这俩货，我还有一些其他的调试技巧，这些技巧可以使我们的调试过程更加高效和有趣。
+无论你是前端刚入门还是经验丰富的老鸟，debug调试都是日常编程中必备的技能。你可能在代码中已经习惯使用`console.log()`和`debugger`，但是我要说，前端真的不止这俩货能调试，我还有一些其他的调试技巧，这些技巧可以使我们的调试过程更加高效和有趣。
 
 ###  `console.log()` 的替代品
 
@@ -37,6 +34,8 @@ console.error("这是一个错误");
 
 如果你想知道某段代码的执行时间，可以试下`console.time()`和`console.timeEnd()`。创建一个计时器，运行你想要测量的代码，然后停止计时并查看结果。
 
+
+
 ```javascript
 console.time("循环计时器");
 for (let i = 0; i < 10000; i++) {
@@ -45,7 +44,11 @@ for (let i = 0; i < 10000; i++) {
 console.timeEnd("循环计时器");
 ```
 
+控制台打印：
+
 ![](https://cdn.geekbuluo.com/blog/20231025/331892.png)
+
+
 
 这对于那些需要较长执行时间的CPU密集型应用程序非常有用，比如神经网络或HTML Canvas的操作。
 
@@ -64,6 +67,8 @@ function randomFunction() {
 
 randomFunction();
 ```
+
+控制台打印：
 
 ![](https://cdn.geekbuluo.com/blog/20231025/82b433.png)
 
@@ -96,12 +101,16 @@ console.clear();
 
 在某些情况下，你可能需要以更可视化的方式呈现数据，而不仅是文本输出。`console.table()`可以帮助你以表格的形式显示数据，使其更容易理解。
 
+
+
 ```javascript
 const person1 = { name: "Weirdo", age: "-23", hobby: "singing" };
 const person2 = { name: "SomeName", age: "Infinity", hobby: "programming" };
 
 console.table({ person1, person2 });
 ```
+
+控制台打印：
 
 ![](https://cdn.geekbuluo.com/blog/20231025/7de95e.png)
 
@@ -113,10 +122,8 @@ console.table({ person1, person2 });
 console.log("%c HelloWrold！", "color: red; background-color: lightblue; border: solid");
 ```
 
+控制台打印：
+
 ![](https://cdn.geekbuluo.com/blog/20231025/e1c401.png)
 
 本文旨在向你展示更高级的JavaScript调试技巧，让你的调试过程更加有趣和高效。
-
-### 参考资源
-
-- [Window Console Object (w3schools.com)](https://www.w3schools.com/jsref/obj_console.asp)
