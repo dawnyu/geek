@@ -5,14 +5,14 @@ title: 不要只会console.log()，试试这个
 head:
   - - meta
     - name: description
-      content: console的多种用法,
+      content: console的多种用法
   - - meta
     - name: keywords
       content: console.time怎么用
 date: 2023/10/25
 tags: JavaScript
 category: 技术专栏
-intro: 无论你是前端刚入门还是经验丰富的老鸟，debug调试都是日常编程中必备的技能。你可能在代码中已经习惯使用`console.log()`和`debugger`，但是我要说，前端真的只有这俩货，我还有一些其他的调试技巧，这些技巧可以使我们的调试过程更加高效和有趣。
+intro: 无论你是前端刚入门还是经验丰富的老鸟，debug调试都是日常编程中必备的技能。你可能在代码中已经习惯使用console.log()和debugger，但是我要说，前端真的只有这俩货，我还有一些其他的调试技巧，这些技巧可以使我们的调试过程更加高效和有趣。
 
 ​---
 ---
