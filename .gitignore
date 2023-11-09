@@ -6,7 +6,6 @@
 *.log
 /src/cache
 /packages/vite/LICENSE
-dist
 dist-ssr
 explorations
 node_modules
