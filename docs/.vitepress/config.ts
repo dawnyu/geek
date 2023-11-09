@@ -50,7 +50,7 @@ export default defineConfig({
     //   text: '在 GitHub 上编辑此页面'
     // },
     footer: {
-      message: `网站地图 - 友情链接 - 版权说明 - 侵删联系 - 皖ICP备17005424号-2`,
+      message: `网站地图 - 友情链接 - 版权说明 - 侵删联系 - <a target="_blank" href="https://beian.miit.gov.cn/">皖ICP备17005424号-2</a>`,
       copyright: `CopyRight © 2020-2023 <a target="_blank" href="//geekbuluo.com">极客部落</a> All Rights Reserved`
     },
     // socialLinks: createSocialLinks(),
